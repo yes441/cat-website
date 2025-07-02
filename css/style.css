@@ -28,6 +28,19 @@ h2 {
   text-shadow: black 1px 1px 2px;
 }
 
+.black-cats {
+  color: #000;
+  text-shadow: white 1px 1px 2px;
+}
+
+.orange-cats {
+  color: #ff8c00;
+  text-shadow: #ff8c00 1px 1px 2px;
+}
+.tan-white-cats {
+  color: #d2b48c;
+  text-shadow: #d2b48c 1px 1px 2px;
+}
 .container {
   width: 80%;
   margin: auto;
