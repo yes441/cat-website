@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Whiskers",
+    "breed": "Siamese",
+    "color": "Cream",
+    "image": "https://example.com/images/whiskers.jpg"
+  },
+  {
+    "name": "Mittens",
+    "breed": "Tabby",
+    "color": "Brown",
+    "image": "https://example.com/images/mittens.jpg"
+  },
+  {
+    "name": "Shadow",
+    "breed": "Maine Coon",
+    "color": "Black",
+    "image": "https://example.com/images/shadow.jpg"
+  },
+  {
+    "name": "Luna",
+    "breed": "Persian",
+    "color": "White",
+    "image": "https://example.com/images/luna.jpg"
+  },
+  {
+    "name": "Simba",
+    "breed": "Bengal",
+    "color": "Spotted",
+    "image": "https://example.com/images/simba.jpg"
+  },
+  {
+    "name": "Oliver",
+    "breed": "British Shorthair",
+    "color": "Gray",
+    "image": "https://example.com/images/oliver.jpg"
+  },
+  {
+    "name": "Bella",
+    "breed": "Ragdoll",
+    "color": "Blue",
+    "image": "https://example.com/images/bella.jpg"
+  },
+  {
+    "name": "Chloe",
+    "breed": "Sphynx",
+    "color": "Pink",
+    "image": "https://example.com/images/chloe.jpg"
+  },
+  {
+    "name": "Leo",
+    "breed": "Norwegian Forest",
+    "color": "Brown",
+    "image": "https://example.com/images/leo.jpg"
+  },
+  {
+    "name": "Nala",
+    "breed": "Scottish Fold",
+    "color": "Cream",
+    "image": "https://example.com/images/nala.jpg"
+  }
+]

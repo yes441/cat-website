@@ -1,0 +1,1 @@
+// This file contains general JavaScript functionality that may be shared across multiple pages.
