@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cat Pictures</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <h1>Play the Clicker Game!</h1>
+
+<div id="game">
+  <button id="clickButton"><img src="images/img1.png" alt=""></button>
+  <p id="score">Score: 0</p>
+  <button id="multiplierButton">Increase Multiplier</button>
+</div>
+<div id="resetGame">
+  <button id="resetButton">Reset Game</button>
+</div>
+
+<script>
+  let score = 0;
+  let multiplier = 1;
+  const button = document.getElementById('clickButton');
+  const scoreDisplay = document.getElementById('score');
+  const resetButton = document.getElementById('resetButton');
+  const multiplierButton = document.getElementById('multiplierButton');
+
+  button.addEventListener('click', () => {
+    score += multiplier;
+    scoreDisplay.textContent = 'Score: ' + score + ' (Multiplier: ' + multiplier + ')';
+  });
+
+  multiplierButton.addEventListener('click', () => {
+    if (score >= 50) {
+      score -= 50;
+      multiplier++;
+      scoreDisplay.textContent = 'Score: ' + score + ' (Multiplier: ' + multiplier + ')';
+    } else {
+      alert('You need at least 50 points to increase the multiplier!');
+    }
+  });
+
+  resetButton.addEventListener('click', () => {
+    score = 0;
+    multiplier = 1;
+    scoreDisplay.textContent = 'Score: ' + score + ' (Multiplier: ' + multiplier + ')';
+  });
+
+  // Initialize display with multiplier
+  scoreDisplay.textContent = 'Score: ' + score + ' (Multiplier: ' + multiplier + ')';
+</script>
+</body>
+</html>
+<button><a href="index.html">Back to Home</a></button>
