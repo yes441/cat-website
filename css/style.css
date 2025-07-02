@@ -90,3 +90,15 @@ button:hover {
   bottom: 0;
   width: 100%;
 }
+
+.reset-button {
+  background-color: #af1e13;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
