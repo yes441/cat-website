@@ -3,6 +3,16 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
 }
 
 header {
@@ -101,4 +111,25 @@ button:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+img[src*='cat'] {
+  transition: transform 0.3s ease;
+}
+
+img[src*='cat']:hover {
+  transform: scale(1.1);
+}
+
+@keyframes shine {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.5);
+  }
+}
+
+img[src*='dog'] {
+  animation: shine 2s infinite;
 }
