@@ -1,0 +1,84 @@
+🔢 Common Versioning Styles
+1. Semantic Versioning (SemVer) – most professional
+
+Format:
+MAJOR.MINOR.PATCH
+
+MAJOR (1.0 → 2.0): Big changes, redesigns, or breaking changes.
+
+MINOR (1.0 → 1.1 → 1.2): New features added, but everything still works.
+
+PATCH (1.0.0 → 1.0.1 → 1.0.2): Small fixes, bug patches, performance tweaks.
+
+👉 Example flow:
+v1.0.0 → v1.0.1 → v1.1.0 → v1.2.0 → v2.0.0
+
+2. Beta / Alpha Tags – for testing versions
+
+If you want to show "work-in-progress" updates:
+
+v1.1-alpha → experimental / early test build
+
+v1.1-beta → more stable, but still testing
+
+v1.1-rc1 → release candidate (almost ready for full release)
+
+v1.1 → final stable release
+
+👉 Example flow:
+v1.0 → v1.1-alpha → v1.1-beta → v1.1 → v1.2
+
+Template:
+
+🐾 Cat-Website Update Log
+📌 Update v1.0 – (Release Date: YYYY-MM-DD)
+
+✨ New Features
+
+Added [feature name]
+
+Improved [feature name]
+
+🐛 Fixes
+
+Fixed [bug/issue]
+
+Resolved [problem]
+
+🎨 Improvements
+
+Updated visuals for [part of site]
+
+Optimized loading speed
+
+Empty Template:
+
+🐾 Cat-Website Update Log
+📌 Update v[] – Release Date: [MM/DD/YYYY]
+
+✨ New Features
+
+[]
+
+🐛 Fixes
+
+[]
+
+🎨 Improvements
+
+[]
+
+||@everyone||
+
+Next update log:
+
+🐾 Cat-Website Update Log
+📌 Update v1.0-beta – (Release Date: 9/7/2025)
+
+✨ Current Features
+
+- Autoclicker with multiplier button
+- RUFUS
+- Featured Cats section
+
+||@everyone||
