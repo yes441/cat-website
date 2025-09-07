@@ -2,12 +2,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #23272a;
 }
 
 header {
   background-color: #4CAF50;
-  color: white;
+  color: #f5f6fa;
   padding: 10px 0;
   text-align: center;
 }
@@ -17,34 +17,35 @@ h1 {
   font-size: 2.5em;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: black 1px 1px 2px;
+  color: #f5f6fa;
+  text-shadow: #111 2px 2px 6px, #000 0 0 2px;
 }
 
 h2 {
   font-size: 1.5em;
-  color: #37660b;
+  color: #a3e635;
   margin-top: 20px;
   text-align: center;
-  text-shadow: black 1px 1px 2px;
+  text-shadow: #111 2px 2px 6px, #000 0 0 2px;
 }
 
 .black-cats {
-  color: #000;
-  text-shadow: rgb(48, 48, 48) 1px 1px 2px;
+  color: #f5f6fa;
+  text-shadow: #111 2px 2px 6px, #000 0 0 2px;
 }
 
 .orange-cats {
-  color: #ff8c00;
-  text-shadow: #ff8c00 1px 1px 2px;
+  color: #ffb347;
+  text-shadow: #111 2px 2px 6px, #ff8c00 0 0 2px;
 }
 .tan-white-cats {
-  color: #d2b48c;
-  text-shadow: #d2b48c 1px 1px 2px;
+  color: #ffe4b5;
+  text-shadow: #111 2px 2px 6px, #d2b48c 0 0 2px;
 }
 
 .unclassified {
-  color: #555;
-  text-shadow: #555 1px 1px 2px;
+  color: #b0b0b0;
+  text-shadow: #111 2px 2px 6px, #555 0 0 2px;
 }
 
 .container {
