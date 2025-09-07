@@ -30,7 +30,7 @@ h2 {
 
 .black-cats {
   color: #000;
-  text-shadow: white 1px 1px 2px;
+  text-shadow: rgb(48, 48, 48) 1px 1px 2px;
 }
 
 .orange-cats {
@@ -41,6 +41,12 @@ h2 {
   color: #d2b48c;
   text-shadow: #d2b48c 1px 1px 2px;
 }
+
+.unclassified {
+  color: #555;
+  text-shadow: #555 1px 1px 2px;
+}
+
 .container {
   width: 80%;
   margin: auto;
