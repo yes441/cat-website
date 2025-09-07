@@ -29,27 +29,27 @@
 
   button.addEventListener('click', () => {
     score += multiplier;
-    scoreDisplay.textContent = 'Score: ' + score + ' (Multiplier: ' + multiplier + ')';
+    scoreDisplay.textContent = 'Score: ' + score + ' (Multiplier: ' + multiplier.toFixed(1) + ')';
   });
 
   multiplierButton.addEventListener('click', () => {
-    if (score >= 50) {
-      score -= 50;
-      multiplier++;
-      scoreDisplay.textContent = 'Score: ' + score + ' (Multiplier: ' + multiplier + ')';
+    if (score >= 500) {
+      score -= 500;
+      multiplier += 0.5;
+      scoreDisplay.textContent = 'Score: ' + score + ' (Multiplier: ' + multiplier.toFixed(1) + ')';
     } else {
-      alert('You need at least 50 points to increase the multiplier!');
+      alert('You need at least 500 points to increase the multiplier!');
     }
   });
 
   resetButton.addEventListener('click', () => {
     score = 0;
     multiplier = 1;
-    scoreDisplay.textContent = 'Score: ' + score + ' (Multiplier: ' + multiplier + ')';
+    scoreDisplay.textContent = 'Score: ' + score + ' (Multiplier: ' + multiplier.toFixed(1) + ')';
   });
 
   // Initialize display with multiplier
-  scoreDisplay.textContent = 'Score: ' + score + ' (Multiplier: ' + multiplier + ')';
+  scoreDisplay.textContent = 'Score: ' + score + ' (Multiplier: ' + multiplier.toFixed(1) + ')';
 </script>
 </body>
 </html>
