@@ -70,15 +70,14 @@ Empty Template:
 
 ||@everyone||
 
-Next update log:
+Next update log: (last recorded version: v1.0.1-beta)
 
 🐾 Cat-Website Update Log
-📌 Update v1.0-beta – (Release Date: 9/7/2025)
+📌 Update v1.0.1-beta – Release Date: 9/7/2025
 
-✨ Current Features
+🐛 Fixes
 
-- Autoclicker with multiplier button
-- RUFUS
-- Featured Cats section
+- Removed all gunshot noises and/or click effects
+- Made sure all buttons worked again
 
 ||@everyone||
