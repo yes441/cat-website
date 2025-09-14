@@ -21,6 +21,90 @@ h1 {
   text-shadow: #111 2px 2px 6px, #000 0 0 2px;
 }
 
+/* Fancy site heading */
+.site-title {
+  position: relative;
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-transform: none;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+}
+
+.site-title span {
+  display: inline-block;
+  background: linear-gradient(90deg, #ffffff, #e9d5ff, #a5b4fc, #60a5fa, #fef08a, #ffffff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: title-shine 8s linear infinite 2s;
+  filter: drop-shadow(0 2px 10px rgba(96, 165, 250, 0.25));
+}
+
+.site-title::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: linear-gradient(90deg, rgba(99,102,241,0.95), rgba(59,130,246,0.95));
+  border-radius: 999px;
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.45), 0 0 28px rgba(99, 102, 241, 0.35);
+}
+
+@keyframes title-shine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Bubble reveal effect for the heading */
+@property --bubble-x {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 0%;
+}
+@property --bubble-size {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 0%;
+}
+
+@keyframes bubble-reveal {
+  0% {
+    --bubble-x: 0%;
+    --bubble-size: 0%;
+    opacity: 0;
+  }
+  10% { opacity: 1; }
+  50% {
+    --bubble-x: 45%;
+    --bubble-size: 80%;
+  }
+  100% {
+    --bubble-x: 100%;
+    --bubble-size: 160%;
+  }
+}
+
+@supports ((-webkit-mask-image: radial-gradient(circle, #000 60%, transparent 61%)) or (mask-image: radial-gradient(circle, #000 60%, transparent 61%))) {
+  .site-title span {
+    -webkit-mask-image: radial-gradient(circle at var(--bubble-x) 50%, #000 var(--bubble-size), transparent calc(var(--bubble-size) + 1%));
+            mask-image: radial-gradient(circle at var(--bubble-x) 50%, #000 var(--bubble-size), transparent calc(var(--bubble-size) + 1%));
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    animation: bubble-reveal 1.8s ease-out forwards, title-shine 8s linear infinite 2s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-title span {
+    animation: none;
+    -webkit-mask-image: none;
+            mask-image: none;
+  }
+}
+
 h2 {
   font-size: 1.5em;
   color: #a3e635;

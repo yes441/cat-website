@@ -70,23 +70,13 @@ Empty Template:
 
 ||@everyone||
 
-Next update log: (last recorded version: v1.2.1-beta)
+Next update log: (last recorded version: v1.2.2-beta)
 
 🐾 Cat-Website Update Log
-📌 Update v1.1.1-beta – Release Date: 9/14/2025 
-
-✨ New Features
-
-- My Card
-- Discord button
-- Version Number
-
-🐛 Fixes
-
-Fixed nothing
+📌 Update v1.2.2-beta – Release Date: 9/14/2025 
 
 🎨 Improvements
 
-Improved some things
+- Check the Heading!
 
 ||@everyone||
