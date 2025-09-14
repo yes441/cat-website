@@ -29,6 +29,31 @@ h2 {
   text-shadow: #111 2px 2px 6px, #000 0 0 2px;
 }
 
+.rufus {
+  color: #d6d5d0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2) 40%,
+    rgba(255, 255, 0, 0.8) 50%,
+    rgba(255, 255, 255, 0.2) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: rufus-shine 4s linear infinite;
+}
+
+@keyframes rufus-shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
 .black-cats {
   color: #f5f6fa;
   text-shadow: #111 2px 2px 6px, #000 0 0 2px;
