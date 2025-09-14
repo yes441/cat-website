@@ -134,3 +134,62 @@ button:hover {
   bottom: 20px;
   right: 20px;
 }
+
+/* Tiny version badge (bottom-left) */
+.version-badge {
+  position: fixed;
+  left: 12px;
+  bottom: 12px;
+  z-index: 1000;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Top-right Discord server button */
+.discord-server-btn {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(135deg, #5865f2 0%, #7289da 50%, #5b6def 100%);
+  box-shadow: 0 8px 24px rgba(88, 101, 242, 0.35), 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.discord-server-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05) saturate(1.1);
+  box-shadow: 0 10px 28px rgba(88, 101, 242, 0.45), 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.discord-server-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 18px rgba(88, 101, 242, 0.35), 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 480px) {
+  .discord-server-btn {
+    top: 12px;
+    right: 12px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}

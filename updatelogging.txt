@@ -70,14 +70,23 @@ Empty Template:
 
 ||@everyone||
 
-Next update log: (last recorded version: v1.0.1-beta)
+Next update log: (last recorded version: v1.2.1-beta)
 
 🐾 Cat-Website Update Log
-📌 Update v1.0.1-beta – Release Date: 9/7/2025
+📌 Update v1.1.1-beta – Release Date: 9/14/2025 
+
+✨ New Features
+
+- My Card
+- Discord button
+- Version Number
 
 🐛 Fixes
 
-- Removed all gunshot noises and/or click effects
-- Made sure all buttons worked again
+Fixed nothing
+
+🎨 Improvements
+
+Improved some things
 
 ||@everyone||
